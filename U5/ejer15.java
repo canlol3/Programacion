@@ -5,8 +5,12 @@ public class ejer15 {
         Scanner s = new Scanner(System.in);
         System.out.println("Introduce la base");
         int base = s.nextInt();
-        System.out.println("Introduce el exponente");
-        int expo = s.nextInt();
+        int expo;
+        do{
+        System.out.println("Introduce el exponente positivo");
+        expo = s.nextInt();
+        }while (expo<= 0 );
+
         for(int i = 1;i <= expo; i++){
             System.out.print("2^"+i+" es igual a "); System.out.printf("%.0f \n",Math.pow(base, i));
             

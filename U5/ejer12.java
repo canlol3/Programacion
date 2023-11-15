@@ -5,14 +5,12 @@ public class ejer12 {
         Scanner s = new Scanner(System.in);
         System.out.println("Cuantos números de la tabla de Finonacci quieres?");
         int cant = s.nextInt();
-        int i = 0;
         double primer = 0;
         double segun = 1;
-        while(i < cant){
+        for(int i = 0;i<cant; i++){
+            System.out.printf("%.0f ",primer);
             primer = primer + segun;
             segun = primer + segun;
-            System.out.printf("%.0f ",primer);
-            i++;
         }
         s.close();
     }
