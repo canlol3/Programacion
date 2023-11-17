@@ -13,7 +13,7 @@ public class ejer19 {
       for (int espacios = 0; espacios <= altura-i+1; espacios++) {
       System.out.print(" ");
       }
-      for (int estrellas = 0; estrellas <= i*2; estrellas++ ){
+      for (int estrellas = 0; estrellas <= i*2; estrellas++){
       System.out.print("\033[32m*");
       }
       System.out.println();

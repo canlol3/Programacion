@@ -22,8 +22,6 @@ public class ejer21 {
                     impares++;
                     sumatorio_impares = num + sumatorio_impares;
                 }
-            }else{
-                break;
             }
         }
         System.out.printf("La media de los números impares es %.2f\n",sumatorio_impares/impares);

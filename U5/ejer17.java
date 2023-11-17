@@ -8,7 +8,6 @@ public class ejer17 {
 
         if( num >= 0 ){
             for(int i = num; i<num+100; i++){
-                num = num;
                 System.out.println(num);
             }
             System.out.println(num);

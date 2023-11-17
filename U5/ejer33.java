@@ -5,18 +5,24 @@ public class ejer33 {
         Scanner s = new Scanner(System.in);
         System.out.println("Dime la altura de la U");
         int altura = s.nextInt();
-        for ( int i = 0; i <=altura; i++){
-            for(int estrellas=0; estrellas!=i; estrellas++){
-                if(estrellas == 0 || estrellas == 1){
-                System.out.print("*");
+        for ( int i = 1; i < altura; i++){
+            for(int estrellas=0; estrellas!=altura; estrellas++){
+                if(estrellas == 0 || estrellas==altura-1){
+                System.out.print("\033[035m*");
                 }else{
+                    System.out.print(" ");
                 }
             }
             System.out.println();
-            for(int espacios=0; espacios < altura-2; espacios++){
-                System.out.print("2");
+        }
+        for(int ultima=0; ultima<altura; ultima++){
+            if(ultima==0 || ultima==altura-1){
+                System.out.print(" ");
+            }else{
+                System.out.print("*");
             }
         }
+        System.out.println("\033[37m");
         s.close();
     }
 }
