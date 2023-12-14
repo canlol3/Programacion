@@ -8,7 +8,7 @@ public class ejer15 {
         int primera = 0;
         for (int i = 1; i <cant_notas+1; i++){
             nota = (int)(Math.random()*7);
-            if(i ==cant_notas){
+            if(i == cant_notas){
                 nota = primera;
             }
             if(i == 1 ){
